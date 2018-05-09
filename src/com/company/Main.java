@@ -12,7 +12,13 @@ public class Main {
         System.out.println(veredicto(args[1],args[2]));
     }
 
-    public static String veredicto(String valor1, String valor2){
+    /**
+     * Este método compara dos valores e imprime el resultado
+     * @param valor1 calificación deseada en el módulo
+     * @param valor2 calificación real del módulo
+     * @return mensaje resultado de la comparación de valores
+     */
+    private static String veredicto(String valor1, String valor2){
         if (valor1.equals(valor2)) {
             return "Perfecto. Has tenido buen criterio.";
         }
